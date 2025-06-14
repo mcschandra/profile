@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background:
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: orange;
+      color: red;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      background: 
+      height:100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+
+    section {
+      padding: 100px 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: fadeInUp 1s ease both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+
+    p {
+      max-width: 700px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e293b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Mupparaju Chandra Sekhar</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi,I'm Chandra Sekhar Mupparaju</h1>
+    <p>DevOps Engineer | AWS | | Azure | Terraform | Docker | Kuberneties | Linux | Windows | NetApp | EMC Storage | Automation</p>
+  </section>
+
+  <main>
+    <section id="about" class="container">
+      <h1>About Me</h1>
+      <p>I am a passionate Cloud Engineer with experience in AWS administration with 2 years in cloud infrastructure management and 
+        1 year in SAN (Dell EMC) and NAS (NetApp) storage. Skilled in designing and optimizing AWS environments, automating deployments with CI/CD pipelines, 
+        and managing Windows/Linux systems. Proficient in troubleshooting Dev/UAT issues, implementing software patches, and scripting with Shell/Python to enhance efficiency.
+        Currently expanding expertise in Azure Cloud, with a strong focus on DevOps best practices to drive scalability, security, and operational excellence.
+      </p>
+    </section>
+
+    <section id="experience" class="container">
+      <h2>Experience</h2>
+      <p>2+ years in AWS cloud administration and 1+ year in storage solutions (SAN/NAS). Experience with EC2, S3, VPC, IAM, CloudFormation, and monitoring tools.</p>
+    </section>
+
+    <section id="education" class="container">
+      <h2>Education</h2>
+      <p>Bachelor of Computer Application. Completed cloud and infrastructure certifications through online platforms.</p>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <p>AWS, Terraform, CloudFormation, Docker, Git, Jenkins, Linux, Python, Networking, Storage Management (EMC, NetApp).</p>
+    </section>
+
+    <section id="certifications" class="container">
+      <h2>Certifications</h2>
+      <p>AWS Certified Solutions Architect – Associate, AWS Certified SysOps Administrator.</p>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <p>Email: mcschandra2263@gmail.com<br>LinkedIn: www.linkedin.com/in/chandra-sekhar-mupparaju</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Chandra Sekhar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
