@@ -1,173 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cloud Engineer Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandra Sekhar | DevOps Engineer</title>
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       scroll-behavior: smooth;
-      font-family: 'Inter', sans-serif;
     }
 
     body {
-      background:
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
     }
 
     header {
-      background: orange;
-      color: red;
-      padding: 1rem 2rem;
       position: fixed;
-      width: 100%;
       top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    header nav a {
+      width: 100%;
+      background: linear-gradient(90deg, #1e3a8a, #2563eb);
       color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      z-index: 1000;
     }
 
-    header nav a:hover {
-      color: #38bdf8;
+    .header-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 2rem;
+      object-fit: cover;
     }
 
-    .hero {
-      background: 
-      height:100vh;
+    .header-text {
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-size: 1.8rem;
+    }
+
+    .header-text p {
+      font-size: 1rem;
+    }
+
+    nav {
+      margin-top: 160px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
+      background-color: #1e40af;
+      position: sticky;
+      top: 100px;
+      z-index: 999;
+    }
+
+    nav a {
       color: white;
-      padding: 2rem;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
+    nav a:hover {
+      background-color: #3b82f6;
     }
 
     section {
-      padding: 100px 2rem;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      animation: fadeInUp 1s ease both;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    h1, h2 {
-      margin-bottom: 1rem;
-      color: #0f172a;
-    }
-
-    p {
-      max-width: 700px;
-    }
-
-    .container {
+      padding: 4rem 2rem;
       max-width: 900px;
-      margin: 0 auto;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-in-out;
     }
 
-    footer {
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 0.5rem;
+      color: #1e3a8a;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+
+    .contact {
       text-align: center;
       padding: 2rem;
-      background: #1e293b;
-      color: white;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      color: #2563eb;
     }
   </style>
 </head>
 <body>
   <header>
-    <h2>Mupparaju Chandra Sekhar</h2>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="aws_logo.jfif" alt="AWS Logo" class="header-img" >
+    <img src="azure_logo.jpg" alt="Azure Logo" class="header-img" margin-left: 13rem;>
+    <img src="Profile.jpg" alt="Profile Image" class="header-img" margin-left: 18rem;>
+    <div class="header-text">
+      <h1>Chandra Sekhar Mupparaju</h1>
+      <p>DevOps Engineer | AWS & Azure Administrator</p>
+      <p><a href="mailto:mcschandra2263@gmail.com" style="color:white">mcschandra2263@gmail.com</a> | +91-9182395594</p>
+      <p><a href="https://mcschandra.github.io/profile/" target="_blank" style="color:white">Portfolio</a> | <a href="https://www.linkedin.com/in/chandra-sekhar-mupparaju" target="_blank" style="color:white">LinkedIn</a></p>
+    </div>
+    <img src="https://cdn.creazilla.com/icons/3254445/terraform-icon-icon-size_256.png" alt="Terraform Logo" class="header-img">
   </header>
 
-  <section class="hero">
-    <h1>Hi,I'm Chandra Sekhar Mupparaju</h1>
-    <p>DevOps Engineer | AWS | | Azure | Terraform | Docker | Kuberneties | Linux | Windows | NetApp | EMC Storage | Automation</p>
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+  </nav>
+
+  <section id="skills">
+    <h2>Skills Summary</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Cloud:</strong> AWS, Azure</li>
+        <li><strong>Languages/Scripts:</strong> Python, Terraform, PowerShell, Bash</li>
+        <li><strong>Storage:</strong> SAN (Dell EMC), NAS (NetApp)</li>
+        <li><strong>OS/Tools:</strong> Linux, Windows, Git, GitHub Actions, ServiceNow</li>
+        <li><strong>Soft Skills:</strong> Communication, Collaboration, Time Management, Problem Solving</li>
+      </ul>
+    </div>
   </section>
 
-  <main>
-    <section id="about" class="container">
-      <h1>About Me</h1>
-      <p>I am a passionate Cloud Engineer with experience in AWS administration with 2 years in cloud infrastructure management and 
-        1 year in SAN (Dell EMC) and NAS (NetApp) storage. Skilled in designing and optimizing AWS environments, automating deployments with CI/CD pipelines, 
-        and managing Windows/Linux systems. Proficient in troubleshooting Dev/UAT issues, implementing software patches, and scripting with Shell/Python to enhance efficiency.
-        Currently expanding expertise in Azure Cloud, with a strong focus on DevOps best practices to drive scalability, security, and operational excellence.
-      </p>
-    </section>
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="card">
+      <h3>AWS Administrator | DXC Technologies</h3>
+      <p>Jan 2023 – Present | Chennai, India</p>
+      <ul>
+        <li>Managed AWS infrastructure including EC2, S3, VPC, IAM, CloudWatch, RDS</li>
+        <li>Automated provisioning with Terraform & CloudFormation</li>
+        <li>Monitored workloads with CloudWatch, CloudTrail, and Cost Explorer</li>
+        <li>Automated scripts with Bash and PowerShell</li>
+        <li>Handled patching, backups, and recovery operations</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Storage Administrator | DXC Technologies</h3>
+      <p>Aug 2022 – Dec 2023 | Chennai, India</p>
+      <ul>
+        <li>Managed Dell EMC SAN & NetApp NAS storage solutions</li>
+        <li>Configured zoning, LUNs, masking, and data replication</li>
+        <li>Performed storage monitoring and capacity planning</li>
+        <li>Coordinated with cross-functional teams for integration & support</li>
+        <li>Maintained documentation for compliance and audits</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="experience" class="container">
-      <h2>Experience</h2>
-      <p>2+ years in AWS cloud administration and 1+ year in storage solutions (SAN/NAS). Experience with EC2, S3, VPC, IAM, CloudFormation, and monitoring tools.</p>
-    </section>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li><a href="https://www.credly.com/badges/2f0580ff-10f8-4452-bb33-f80a4893a682/public_url" target="_blank">AWS Solution Architect Associate – 2025</a></li>
+        <li><a href="https://www.credly.com/badges/f6d402e3-d2a9-4922-ac81-3ee4829dcb82/public_url" target="_blank">AWS AI Practitioner – 2025</a></li>
+        <li><a href="https://www.credly.com/badges/f46f7714-2458-49ff-9d1d-d03b95678d2e/public_url" target="_blank">AWS Cloud Practitioner – 2024</a></li>
+        <li><a href="https://www.credly.com/badges/84ec073f-086d-40fa-8d81-9cebacd8d2b7/public_url" target="_blank">Azure Fundamentals – 2022</a></li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="education" class="container">
-      <h2>Education</h2>
-      <p>Bachelor of Computer Application. Completed cloud and infrastructure certifications through online platforms.</p>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Bachelor of Computer Applications</h3>
+      <p>Jagarlamudi Kuppuswamy Choudary College, July 2022</p>
+    </div>
+  </section>
 
-    <section id="skills" class="container">
-      <h2>Skills</h2>
-      <p>AWS, Terraform, CloudFormation, Docker, Git, Jenkins, Linux, Python, Networking, Storage Management (EMC, NetApp).</p>
-    </section>
-
-    <section id="certifications" class="container">
-      <h2>Certifications</h2>
-      <p>AWS Certified Solutions Architect – Associate, AWS Certified SysOps Administrator.</p>
-    </section>
-
-    <section id="contact" class="container">
-      <h2>Contact</h2>
-      <p>Email: mcschandra2263@gmail.com<br>LinkedIn: www.linkedin.com/in/chandra-sekhar-mupparaju</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Chandra Sekhar. All rights reserved.</p>
+  
+  <footer class="contact">
+    <p>© 2025 Chandra Sekhar Mupparaju</p>
   </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    function revealOnScroll() {
+      const triggerBottom = window.innerHeight * 0.9;
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
 </body>
 </html>
